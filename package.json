@@ -10,7 +10,8 @@
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\" ",
     "data:import": "node Backend/seeder.js",
-    "data:destroy": "node Backend/seeder.js -d"
+    "data:destroy": "node Backend/seeder.js -d",
+    "build":"npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "repository": {
     "type": "git",
@@ -19,9 +20,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Amitakumari1994/E-commerce/issues"
+    "url": "https://github.com/Amitakumari1994/E-commerce-resurrection/issues"
   },
-  "homepage": "https://github.com/Amitakumari1994/E-commerce#readme",
+  "homepage": "https://github.com/Amitakumari1994/E-commerce-resurrection#readme",
   "dependencies": {
     "@google-pay/button-react": "^3.0.10",
     "bcryptjs": "^2.4.3",
